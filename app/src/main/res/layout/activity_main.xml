@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginVertical="@dimen/activity_vertical_margin">
+
+            <include
+                android:id="@+id/header"
+                layout="@layout/layout_header" />
+
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:text="@string/first_name"
+                android:textSize="@dimen/text_size" />
+
+
+            <EditText
+                android:id="@+id/inputFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstName"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputFirstName"
+                android:text="@string/last_name"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/inputLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastName"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputLastName"
+                android:text="@string/age"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/inputAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/age"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/questionAboutDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputAge"
+                android:text="@string/question_about_day"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/questionAboutDay"
+                android:layout_marginTop="@dimen/text_margin"
+                android:text="@string/monday"
+                android:textSize="@dimen/middle_text_size" />
+
+            <RadioButton
+                android:id="@+id/wednesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/monday"
+                android:text="@string/wednesday"
+                android:textSize="@dimen/middle_text_size" />
+
+            <RadioButton
+                android:id="@+id/friday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wednesday"
+                android:text="@string/friday"
+                android:textSize="@dimen/middle_text_size" />
+
+            <CheckBox
+                android:id="@+id/agreeToTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/friday"
+                android:layout_marginTop="@dimen/text_margin"
+                android:text="@string/agree_of_terms"
+                android:textSize="@dimen/small_text_size" />
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agreeToTerms"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginBottom="@dimen/button_top_margin"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
