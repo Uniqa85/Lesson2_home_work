@@ -112,7 +112,7 @@
                 android:layout_below="@+id/agreeToTerms"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/text_margin"
-                android:layout_marginBottom="@dimen/button_top_margin"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
                 android:text="@string/submit"
                 android:textAllCaps="false"
                 android:textSize="@dimen/text_size" />
